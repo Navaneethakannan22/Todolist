@@ -1,1 +1,1 @@
-proc
+web: node app.js
