@@ -109,9 +109,9 @@ app.post("/", (req, res) => {
     const addedItem = req.body.newItem;
     const listPage = req.body.addButton;
 
-    const newItem = {
+    const newItem = new item({
         name: addedItem
-    }
+    });
     // item.insertMany(newItem, (err) => {
     //     if (err) {
     //         console.log(err);
